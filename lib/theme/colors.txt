@@ -1,0 +1,27 @@
+theme:violet[(b2a6be),(9997bc),(555184)],white[fee9ce],black[28293d]
+
+theme:purple[(4b2138),(6d3c52),(765d67)],white[fadcd5],black[1b0c1a]
+
+theme:blue[(052659),(5483b3),(7da0ca)],white[c1e8ff],black[021024]
+
+theme:golden[e09145],white[fcd9b8],black[(17181d),(292c35)]
+
+theme:b&w[(66666e),(9999a1),(e6e6e9)},white[f4f4f6],black[000000]
+
+
+
+
+fire base
+Platform  Firebase App Id
+web       1:594832364999:web:25080aae7db4269732f5e2
+android   1:594832364999:android:acec6ef01d60171b32f5e2
+ios       1:594832364999:ios:ea93b000d8186fce32f5e2
+macos     1:594832364999:ios:ea93b000d8186fce32f5e2
+windows   1:594832364999:web:2b62181bb075069232f5e2
+
+
+
+
+sh1 and sha2
+SHA1: CB:6E:0C:68:26:F4:04:0B:05:39:15:75:26:F9:94:17:AB:14:3C:7F
+         SHA256: 8D:00:C2:A3:99:28:A4:D7:C5:6F:1F:26:20:78:59:C7:CA:C3:8B:1A:A9:CA:7E:37:3A:4D:76:E4:F9:1E:F5:BC

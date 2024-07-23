@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "594832364999",
+    "project_id": "sigmawore",
+    "storage_bucket": "sigmawore.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594832364999:android:acec6ef01d60171b32f5e2",
+        "android_client_info": {
+          "package_name": "com.example.sigma_wor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCQP3X-f6PtVONAUHlxbC2nq80xYbRZrc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
