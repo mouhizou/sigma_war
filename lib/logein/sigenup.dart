@@ -65,7 +65,7 @@ class _signeupState extends State<signeup> {
         showDialog(
             context: context,
             builder: (context){
-              return AlertDialog(
+              return const AlertDialog(
                 title: Text('the confirmation is wronge!'),
               );
             }
@@ -130,14 +130,14 @@ class _signeupState extends State<signeup> {
                   obscureText: dontshowpassword1,
                   decoration: InputDecoration(
                       suffixIcon:  Padding(
-                        padding: EdgeInsetsDirectional.only(end: 12.5),
+                        padding: const EdgeInsetsDirectional.only(end: 12.5),
                         child: dontshowpassword1 ?IconButton(
                             onPressed: (){
                               setState(() {
                                 dontshowpassword1 = !dontshowpassword1;
                               });
                             },
-                            icon: Icon(Icons.visibility)
+                            icon: const Icon(Icons.visibility)
                         )
                             :IconButton(
                             onPressed: (){
@@ -145,7 +145,7 @@ class _signeupState extends State<signeup> {
                                 dontshowpassword1 = !dontshowpassword1;
                               });
                             },
-                            icon: Icon(Icons.visibility_off)
+                            icon: const Icon(Icons.visibility_off)
                         ),
                       ),
 
@@ -173,14 +173,14 @@ class _signeupState extends State<signeup> {
                   obscureText: dontshowpassword2 ,
                   decoration: InputDecoration(
                       suffixIcon:  Padding(
-                        padding: EdgeInsetsDirectional.only(end: 12.5),
+                        padding: const EdgeInsetsDirectional.only(end: 12.5),
                         child: dontshowpassword2 ?IconButton(
                             onPressed: (){
                               setState(() {
                                 dontshowpassword2 = !dontshowpassword2;
                               });
                             },
-                            icon: Icon(Icons.visibility)
+                            icon: const Icon(Icons.visibility)
                         )
                             :IconButton(
                             onPressed: (){
@@ -188,7 +188,7 @@ class _signeupState extends State<signeup> {
                                 dontshowpassword2 = !dontshowpassword2;
                               });
                             },
-                            icon: Icon(Icons.visibility_off)
+                            icon: const Icon(Icons.visibility_off)
                         ),
                       ),
 
@@ -238,7 +238,7 @@ class _signeupState extends State<signeup> {
 
               // signe in withe text
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 25.0),
+                padding: const EdgeInsets.symmetric(horizontal: 25.0),
                 child: Row(
                   children: [
                     Expanded(
@@ -274,7 +274,7 @@ class _signeupState extends State<signeup> {
                     GestureDetector(
                       onTap: () => AuthService().signinwithgoogle(),
                       child: Container(
-                        padding: EdgeInsets.all(20),
+                        padding: const EdgeInsets.all(20),
                         decoration: BoxDecoration(
                           border: Border.all(color: Theme.of(context).colorScheme.tertiary),
                           borderRadius: BorderRadius.circular(16),
@@ -287,11 +287,11 @@ class _signeupState extends State<signeup> {
                       ),
                     ),
 
-                    SizedBox(width: 25),
+                    const SizedBox(width: 25),
 
                     // apple button
                     Container(
-                      padding: EdgeInsets.all(20),
+                      padding: const EdgeInsets.all(20),
                       decoration: BoxDecoration(
                         border: Border.all(color: Theme.of(context).colorScheme.tertiary),
                         borderRadius: BorderRadius.circular(16),
@@ -314,7 +314,7 @@ class _signeupState extends State<signeup> {
                     'Alredy a  member?',
                     style: TextStyle(color: Theme.of(context).colorScheme.inversePrimary),
                   ),
-                  SizedBox(width: 4),
+                  const SizedBox(width: 4),
                   GestureDetector(
                     onTap:  widget.onTap ,
                     child: Text(

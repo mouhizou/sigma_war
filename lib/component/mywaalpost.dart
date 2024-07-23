@@ -8,7 +8,7 @@ class mywallpost extends StatefulWidget {
   final Timestamp time;
   final List<String>likes;
   final String postId;
-   mywallpost({super.key,required this.emailname,required this.time,required this.mesaage,required this.postId,required this.likes});
+   const mywallpost({super.key,required this.emailname,required this.time,required this.mesaage,required this.postId,required this.likes});
 
   @override
   State<mywallpost> createState() => _mywallpostState();
@@ -46,8 +46,8 @@ class _mywallpostState extends State<mywallpost> {
           color: Theme.of(context).colorScheme.primary,
           borderRadius: BorderRadius.circular(20)
       ),
-      margin: EdgeInsets.only(top: 25,right: 25,left: 25),
-      padding: EdgeInsets.all(25),
+      margin: const EdgeInsets.only(top: 25,right: 25,left: 25),
+      padding: const EdgeInsets.all(25),
       child: Row(
         children: [
           //like butten
@@ -66,7 +66,7 @@ class _mywallpostState extends State<mywallpost> {
               children: [
                 Text(widget.mesaage,style: TextStyle(color: Theme.of(context).colorScheme.inversePrimary),),
                 Text(widget.emailname,style: TextStyle(color: Theme.of(context).colorScheme.background),),
-                Text(widget.time.toDate().hour.toString()+':'+widget.time.toDate().minute.toString(),style: TextStyle(color: Theme.of(context).colorScheme.background),)
+                Text('${widget.time.toDate().hour}:${widget.time.toDate().minute}',style: TextStyle(color: Theme.of(context).colorScheme.background),)
               ],
             ),
           ),

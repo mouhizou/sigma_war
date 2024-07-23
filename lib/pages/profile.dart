@@ -18,14 +18,14 @@ class profile extends StatelessWidget {
             //profile pic
             Container(
               decoration: BoxDecoration(shape: BoxShape.circle,color: Theme.of(context).colorScheme.primary),
-              padding: EdgeInsets.all(10),
-              margin: EdgeInsets.only(right: 10),
+              padding: const EdgeInsets.all(10),
+              margin: const EdgeInsets.only(right: 10),
               child: Icon(Icons.person_4,color: Theme.of(context).colorScheme.inversePrimary,),
             ),
             //name
-            Text('name'),
+            const Text('name'),
             //habits and dayes and score
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Column(
@@ -57,7 +57,7 @@ class profile extends StatelessWidget {
             ),
             //settins
             Container(
-              child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+              child: const Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
                 Text('Settings'),
                 Icon(Icons.settings)
               ],
@@ -65,7 +65,7 @@ class profile extends StatelessWidget {
             ),
             //trophy
             Container(
-              child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+              child: const Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
                 Text('Trophy'),
                 Icon(Icons.military_tech)
               ],
@@ -73,7 +73,7 @@ class profile extends StatelessWidget {
             ),
             //logeoute
             Container(
-              child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+              child: const Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
                 Text('Loge out'),
                 Icon(Icons.logout)
               ],

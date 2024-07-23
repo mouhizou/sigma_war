@@ -4,7 +4,7 @@ import 'package:sigma_wor/logein/auth_servise.dart';
 
 class logeinpage extends StatefulWidget {
   final Function()? onTap;
-logeinpage({super.key, required this.onTap });
+const logeinpage({super.key, required this.onTap });
 
   @override
   State<logeinpage> createState() => _logeinpageState();
@@ -22,7 +22,7 @@ class _logeinpageState extends State<logeinpage> {
     showDialog(
         context: context,
         builder: (context){
-          return AlertDialog(
+          return const AlertDialog(
             title: Text('retry againe'),
           );
         }
@@ -110,14 +110,14 @@ class _logeinpageState extends State<logeinpage> {
                   obscureText: dontshowpassword ,
                   decoration: InputDecoration(
                       suffixIcon:  Padding(
-                        padding: EdgeInsetsDirectional.only(end: 12.5),
+                        padding: const EdgeInsetsDirectional.only(end: 12.5),
                         child: dontshowpassword ?IconButton(
                             onPressed: (){
                               setState(() {
                                 dontshowpassword = !dontshowpassword;
                               });
                             },
-                            icon: Icon(Icons.visibility)
+                            icon: const Icon(Icons.visibility)
                         )
                             :IconButton(
                             onPressed: (){
@@ -125,7 +125,7 @@ class _logeinpageState extends State<logeinpage> {
                                 dontshowpassword = !dontshowpassword;
                               });
                             },
-                            icon: Icon(Icons.visibility_off)
+                            icon: const Icon(Icons.visibility_off)
                         ),
                       ),
                       enabledBorder:  OutlineInputBorder(
@@ -184,7 +184,7 @@ class _logeinpageState extends State<logeinpage> {
 
               // signe in withe text
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 25.0),
+                padding: const EdgeInsets.symmetric(horizontal: 25.0),
                 child: Row(
                   children: [
                     Expanded(
@@ -220,7 +220,7 @@ class _logeinpageState extends State<logeinpage> {
                     GestureDetector(
                       onTap: () => AuthService().signinwithgoogle(),
                       child: Container(
-                        padding: EdgeInsets.all(20),
+                        padding: const EdgeInsets.all(20),
                         decoration: BoxDecoration(
                           border: Border.all(color: Theme.of(context).colorScheme.tertiary),
                           borderRadius: BorderRadius.circular(16),
@@ -233,11 +233,11 @@ class _logeinpageState extends State<logeinpage> {
                       ),
                     ),
 
-                    SizedBox(width: 25),
+                    const SizedBox(width: 25),
 
                     // apple button
                     Container(
-                      padding: EdgeInsets.all(20),
+                      padding: const EdgeInsets.all(20),
                       decoration: BoxDecoration(
                         border: Border.all(color: Theme.of(context).colorScheme.tertiary),
                         borderRadius: BorderRadius.circular(16),
@@ -259,7 +259,7 @@ class _logeinpageState extends State<logeinpage> {
                     'Not a member?',
                     style: TextStyle(color: Theme.of(context).colorScheme.inversePrimary),
                   ),
-                  SizedBox(width: 4),
+                  const SizedBox(width: 4),
                   GestureDetector(
                     onTap: widget.onTap,
                     child: Text(

@@ -10,14 +10,14 @@ class chatsgroup extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-          Icon(Icons.arrow_back_outlined),
+          const Icon(Icons.arrow_back_outlined),
           Row(
             children: [
               //profile pic
               Container(
                 decoration: BoxDecoration(shape: BoxShape.circle,color: Theme.of(context).colorScheme.primary),
-                padding: EdgeInsets.all(10),
-                margin: EdgeInsets.only(right: 10),
+                padding: const EdgeInsets.all(10),
+                margin: const EdgeInsets.only(right: 10),
                 child: Icon(Icons.person_4,color: Theme.of(context).colorScheme.inversePrimary,),
               ),
               //searche bare
@@ -25,7 +25,7 @@ class chatsgroup extends StatelessWidget {
             ],
           ),
           //chates text
-          Text('CHATS'),
+          const Text('CHATS'),
             //liste of chat tail's
             StreamBuilder(
               stream: FirebaseFirestore.instance.collection('User Chats').orderBy('Last Message Time',descending: false).snapshots(),
@@ -35,13 +35,13 @@ class chatsgroup extends StatelessWidget {
                       itemCount: snapshot.data!.docs.length,
                       itemBuilder: (context,index){
                         final group = snapshot.data!.docs[index];
-                          return groupechatetaile();
+                          return const groupechatetaile();
                       }
                   );
                 }else if (snapshot.hasError){
                   return Center(child: Text(snapshot.error.toString()));
                 }
-                return Center(
+                return const Center(
                   child: CircularProgressIndicator(),
                 );
               },

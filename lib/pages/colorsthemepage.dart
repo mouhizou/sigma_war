@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:sigma_wor/logein/logeinpage.dart';
 import 'package:sigma_wor/theme/themeprov.dart';
 class settingapage extends StatelessWidget {
   const settingapage({super.key});
@@ -36,9 +34,9 @@ class settingapage extends StatelessWidget {
                     //vilote
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(100),
-                      color:Color.fromRGBO(0x99, 0x97, 0xBC, 1.0)
+                      color:const Color.fromRGBO(0x99, 0x97, 0xBC, 1.0)
                     ),
-                    child: Center(child: Text('vilote',style: TextStyle(color: Color.fromRGBO(0xfe, 0xe9, 0xce, 1.0)),)),
+                    child: const Center(child: Text('vilote',style: TextStyle(color: Color.fromRGBO(0xfe, 0xe9, 0xce, 1.0)),)),
                   ),
                 ),
               ),
@@ -55,9 +53,9 @@ class settingapage extends StatelessWidget {
                     //blue
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
-                        color:Color.fromRGBO(0x54, 0x83, 0xb3, 1.0)
+                        color:const Color.fromRGBO(0x54, 0x83, 0xb3, 1.0)
                     ),
-                    child: Center(child: Text('blue',style: TextStyle(color: Color.fromRGBO(0xc1, 0xe8, 0xff, 1.0)),)),
+                    child: const Center(child: Text('blue',style: TextStyle(color: Color.fromRGBO(0xc1, 0xe8, 0xff, 1.0)),)),
                   ),
                 ),
               ),
@@ -74,9 +72,9 @@ class settingapage extends StatelessWidget {
                     //purple
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
-                        color:Color.fromRGBO(0x6d, 0x3c, 0x52, 1.0)
+                        color:const Color.fromRGBO(0x6d, 0x3c, 0x52, 1.0)
                     ),
-                    child: Center(child: Text('purple',style: TextStyle(color: Color.fromRGBO(0xfa, 0xdc, 0xd5, 1.0)),)),//Color(0xfadcd5)
+                    child: const Center(child: Text('purple',style: TextStyle(color: Color.fromRGBO(0xfa, 0xdc, 0xd5, 1.0)),)),//Color(0xfadcd5)
                   ),
                 ),
               ),
@@ -97,9 +95,9 @@ class settingapage extends StatelessWidget {
                     //golden
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
-                        color:Color.fromRGBO(0xe0, 0x91, 0x45, 1.0)
+                        color:const Color.fromRGBO(0xe0, 0x91, 0x45, 1.0)
                     ),
-                    child: Center(child: Text('golden',style: TextStyle(color: Color.fromRGBO(0xfc, 0xd9, 0xb8, 1.0)),)),
+                    child: const Center(child: Text('golden',style: TextStyle(color: Color.fromRGBO(0xfc, 0xd9, 0xb8, 1.0)),)),
                   ),
                 ),
               ),
@@ -116,9 +114,9 @@ class settingapage extends StatelessWidget {
                     //bandw
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
-                        color:Color.fromRGBO(153, 153, 161, 1)
+                        color:const Color.fromRGBO(153, 153, 161, 1)
                     ),
-                    child: Center(child: Text('B&W',style: TextStyle(color: Color.fromRGBO(0xf4, 0xf4, 0xf6, 1.0)),)),//Color(0xf4f4f6)
+                    child: const Center(child: Text('B&W',style: TextStyle(color: Color.fromRGBO(0xf4, 0xf4, 0xf6, 1.0)),)),//Color(0xf4f4f6)
                   ),
                 ),
               ),

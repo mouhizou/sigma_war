@@ -40,21 +40,21 @@ class _groupchatState extends State<groupchat> {
               child: Row(
                 children: [
                   //bach butten
-                  IconButton(onPressed: (){}, icon:Icon(Icons.arrow_back_outlined)),
+                  IconButton(onPressed: (){}, icon:const Icon(Icons.arrow_back_outlined)),
 
                   //group photo
                   Container(
                     decoration: BoxDecoration(shape: BoxShape.circle,color: Theme.of(context).colorScheme.primary),
-                    padding: EdgeInsets.all(10),
-                    margin: EdgeInsets.only(right: 10),
+                    padding: const EdgeInsets.all(10),
+                    margin: const EdgeInsets.only(right: 10),
                     child: Icon(Icons.person_4,color: Theme.of(context).colorScheme.inversePrimary,),
                   ),
 
                   //group name
-                  Text('name'),
+                  const Text('name'),
 
                   //settingsbuten
-                  IconButton(onPressed: (){}, icon:Icon(Icons.settings))
+                  IconButton(onPressed: (){}, icon:const Icon(Icons.settings))
                 ],
               ),
             ),
@@ -88,7 +88,7 @@ class _groupchatState extends State<groupchat> {
                     }else if (snapshot.hasError){
                       return Center(child: Text(snapshot.error.toString()));
                     }
-                    return Center(
+                    return const Center(
                       child: CircularProgressIndicator(),
                     );
                   },
@@ -122,7 +122,7 @@ class _groupchatState extends State<groupchat> {
                   ),
                   IconButton(
                       onPressed: sendmesage,
-                      icon: Icon(Icons.arrow_forward_ios)
+                      icon: const Icon(Icons.arrow_forward_ios)
                   )
                 ],
               ),

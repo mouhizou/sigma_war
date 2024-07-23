@@ -8,7 +8,7 @@ class wallpost extends StatefulWidget {
   final String postId;
   final List<String> likes;
   final Timestamp time;
-  wallpost({super.key,required this.emailname,required this.mesaage,required this.time,required this.likes,required this.postId});
+  const wallpost({super.key,required this.emailname,required this.mesaage,required this.time,required this.likes,required this.postId});
 
   @override
   State<wallpost> createState() => _wallpostState();
@@ -46,15 +46,15 @@ class _wallpostState extends State<wallpost> {
         color: Theme.of(context).colorScheme.inversePrimary,
         borderRadius: BorderRadius.circular(20)
       ),
-      margin: EdgeInsets.only(top: 25,right: 25,left: 25),
-      padding: EdgeInsets.all(25),
+      margin: const EdgeInsets.only(top: 25,right: 25,left: 25),
+      padding: const EdgeInsets.all(25),
       child: Row(
         children: [
           //the profile picture of the sender
           Container(
             decoration: BoxDecoration(shape: BoxShape.circle,color: Theme.of(context).colorScheme.primary),
-            padding: EdgeInsets.all(10),
-            margin: EdgeInsets.only(right: 10),
+            padding: const EdgeInsets.all(10),
+            margin: const EdgeInsets.only(right: 10),
             child: Icon(Icons.person_4,color: Theme.of(context).colorScheme.inversePrimary,),
           ),
           //the message and email of the sender
@@ -64,7 +64,7 @@ class _wallpostState extends State<wallpost> {
               children: [
                 Text(widget.mesaage,style: TextStyle(color: Theme.of(context).colorScheme.background),),
                 Text(widget.emailname,style: TextStyle(color: Theme.of(context).colorScheme.primary),),
-                Text(widget.time.toDate().hour.toString()+':'+widget.time.toDate().minute.toString(),style: TextStyle(color: Theme.of(context).colorScheme.primary),)
+                Text('${widget.time.toDate().hour}:${widget.time.toDate().minute}',style: TextStyle(color: Theme.of(context).colorScheme.primary),)
               ],
             ),
           ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 ThemeData violet = ThemeData(
-    colorScheme: ColorScheme.dark(
+    colorScheme: const ColorScheme.dark(
       background: Color.fromRGBO(40, 41, 61, 1),
       primary: Color.fromRGBO(153, 151, 188, 1),
       secondary: Color.fromRGBO(178, 166, 190, 1),
@@ -10,7 +10,7 @@ ThemeData violet = ThemeData(
 );
 
 ThemeData purple = ThemeData(
-    colorScheme: ColorScheme.dark(
+    colorScheme: const ColorScheme.dark(
       background: Color.fromRGBO(27, 12, 26, 1),
       primary: Color.fromRGBO(109, 60, 82, 1),
       secondary: Color.fromRGBO(118, 93, 103, 1),
@@ -20,7 +20,7 @@ ThemeData purple = ThemeData(
 );
 
 ThemeData blue = ThemeData(
-    colorScheme: ColorScheme.dark(
+    colorScheme: const ColorScheme.dark(
       background: Color.fromRGBO(2, 16, 36, 1),
       primary: Color.fromRGBO(84, 131, 179, 1),
       secondary: Color.fromRGBO(125, 160, 202, 1),
@@ -30,7 +30,7 @@ ThemeData blue = ThemeData(
 );
 
 ThemeData golden = ThemeData(
-    colorScheme: ColorScheme.dark(
+    colorScheme: const ColorScheme.dark(
       background: Color.fromRGBO(23, 24, 29, 1),
       primary: Color.fromRGBO(224, 145, 69, 1),
       secondary: Color.fromRGBO(224, 145, 69, 1),
@@ -40,7 +40,7 @@ ThemeData golden = ThemeData(
 );
 
 ThemeData bandw = ThemeData(
-    colorScheme: ColorScheme.dark(
+    colorScheme: const ColorScheme.dark(
       background: Color.fromRGBO(0, 0, 0, 1),
       primary: Color.fromRGBO(153, 153, 161, 1),
       secondary: Color.fromRGBO(102, 102, 110, 1),

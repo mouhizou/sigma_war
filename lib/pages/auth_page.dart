@@ -14,7 +14,7 @@ class authpage extends StatelessWidget {
           if (snapshot.hasData){
             return homepage();
           }else{
-            return regestrorlogein();
+            return const regestrorlogein();
           }
         },
       ),

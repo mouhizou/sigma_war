@@ -4,7 +4,7 @@ class rsemepage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Column(
         children: [
           //resume withe chart columns or a heatmap

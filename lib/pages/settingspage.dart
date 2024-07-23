@@ -9,7 +9,7 @@ class settingspage extends StatefulWidget {
 class _settingspageState extends State<settingspage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Column(
         children: [
           //back icone and text of settings

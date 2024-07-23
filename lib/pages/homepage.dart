@@ -22,18 +22,18 @@ class homepage extends StatelessWidget {
                 children: [
                   Container(
                     decoration: BoxDecoration(shape: BoxShape.circle,color: Theme.of(context).colorScheme.primary),
-                    padding: EdgeInsets.all(10),
-                    margin: EdgeInsets.only(right: 10),
+                    padding: const EdgeInsets.all(10),
+                    margin: const EdgeInsets.only(right: 10),
                     child: Icon(Icons.person_4,color: Theme.of(context).colorScheme.inversePrimary,),
                   ),
-                  Text('NAme'),
+                  const Text('NAme'),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       Container(
                         decoration: BoxDecoration(shape: BoxShape.circle,color: Theme.of(context).colorScheme.primary),
-                        padding: EdgeInsets.all(10),
-                        margin: EdgeInsets.only(right: 10),
+                        padding: const EdgeInsets.all(10),
+                        margin: const EdgeInsets.only(right: 10),
                         child: Icon(Icons.notifications,color: Theme.of(context).colorScheme.inversePrimary,),
                       ),
                     ],
